@@ -1,0 +1,111 @@
+/* ==UserStyle==
+@name           twitter.com - Dec 2023
+@namespace      github.com/tercmd
+@version        0.1.0
+@description    Style Twitter.
+@author         tercmd <contact@tercmd.com> (http://tercmd.com)
+@license        GPL-3.0-or-later
+==/UserStyle== */
+
+@-moz-document domain("twitter.com") {
+    .r-s224ru {
+        background-color: #00ff00;
+        box-shadow: 0px 0px 3px #00ff00;
+    }
+
+    .r-s224ru * {
+        color: black;
+    }
+
+    .r-o6sn0f,
+    a[rel*="noopener noreferrer nofollow"] {
+        color: #00ff00;
+    }
+
+    .r-127358a > svg > circle:nth-child(1) {
+        stroke: transparent !important;
+    }
+
+    .r-127358a > svg > circle:nth-child(2) {
+        stroke: #ffffff !important;
+        stroke-width: 2;
+    }
+
+    .r-1kqtdi0,
+    .r-1igl3o0 {
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+    }
+
+    .r-gu4em3 {
+        background-color: transparent;
+    }
+
+    * {
+        font-family: monospace !important;
+    }
+
+    a[href$="/lists"],
+    a[href$="/communities"],
+    a[href$="/i/verified-choose"],
+    a[href$="/highlights"],
+    nav[aria-label="Footer"] {
+        display: none;
+    }
+
+    .r-11z020y {
+        background-color: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(3px);
+    }
+
+    div[data-testid="placementTracking"] {
+        background: #00ff0030;
+    }
+
+    .r-1kqtdi0[role="link"]::before {
+        content: "";
+        background: linear-gradient(to right, #00ff00 0%, transparent 2%, transparent 98%, #00ff00 100%), linear-gradient(#00ff00 0%, transparent 2%, transparent 98%, #00ff00 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        filter: blur(10px);
+        opacity: 0.75;
+    }
+
+    .r-105ug2t > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)::before {
+        content: "";
+        background: linear-gradient(to right, #00ff00 0%, transparent 2%, transparent 98%, #00ff00 100%), linear-gradient(#00ff00 0%, transparent 2%, transparent 98%, #00ff00 100%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        filter: blur(3px) brightness(3);
+        opacity: 1;
+    }
+
+    * {
+        text-shadow: 0px 0px 5px currentColor;
+    }
+
+    @keyframes spin {
+        from { rotate: 0deg; scale: 3; stroke: #0f0; }
+        to { rotate: 360deg; scale: 1; }
+    }
+
+    @keyframes stroke {
+        from {stroke-dasharray: 18px;}
+        to {stroke-dasharray: 110px;}
+    }
+
+    #placeholder > svg {
+        stroke: #0f0;
+        animation: stroke 1s ease;
+    }
+
+    [aria-label="Trending"] > * > *:not(div.r-1h3ijdo:nth-child(1)) {
+        display: none;
+    }
+}
