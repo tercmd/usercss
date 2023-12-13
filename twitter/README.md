@@ -4,7 +4,7 @@
 
 A theme for Twitter.com that makes it greener, removes trends and unwanted menu items, marks ads with a light green background.
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/tercmd/usercss/master/twitter.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/tercmd/usercss/master/twitter/twitter.user.css)
 
 Config:
 - Set theme to dark
